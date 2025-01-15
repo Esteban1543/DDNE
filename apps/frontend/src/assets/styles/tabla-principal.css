@@ -1,0 +1,138 @@
+/* Estilos de Tablas en Modulos Inventarios */
+
+.section-tabla-principal {
+  border-top: 2px solid black;
+  border-bottom: 3px solid black;
+  padding: 1.5rem;
+  padding-bottom: 3.7rem;
+  overflow: auto;
+  width: 97%;
+  margin: auto;
+  min-height: 75vh;
+  position: relative;
+}
+
+.tabla-principal {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 8px rgb(54, 54, 99, .5);
+  /* border-radius: 10px; */
+  user-select: none;
+  border-radius: 16px;
+}
+
+/* .tabla-principal tr{
+  border-bottom: 2px solid #36366300;
+  border-bottom: 2px solid transparent;
+} */
+.tabla-principal tbody tr:hover {
+  box-shadow: 0 2px 0 0 #113dc091;
+  text-shadow: 0px 0.6px 0 #0009;
+}
+
+.tabla-principal thead {
+
+  /* Gama Morados */
+  /* background: #5959a5;
+  background: #486793;
+  background: #5959a5 linear-gradient(0deg, #5959a5, #2f3965 0%, #2e3862 15%, #5959a5 103%);
+  background: #5578a8 linear-gradient(0deg, #5578a8, #355379 0%, #1e3557 12%, #5578a8 140%); */
+
+  /* Gama Negro-Verde */
+  /* background:#04A5BA;
+  background:#023693; */
+  /* background: #050C1B linear-gradient(90deg, #050C1B, #1A4055 15%, #1A4055 35%, #050C1B 50%);
+  background: #050C1B linear-gradient(90deg, #050C1B, #023693 35%, #228fa0 55%, #050C1B 84%);
+  background:#050C1B linear-gradient(90deg, #228fa0 0%, #023693 61%, #050c1b71 85%); */
+
+  /* background: #050C1B linear-gradient(90deg, #228fa0 -16%, #023693 70%, #14264c70 119%); */
+
+  color: white;
+  text-shadow: 1px 0 1px black;
+  font-size: 1.050rem;  
+}
+
+.tabla-principal th {
+  /* padding: 0.8rem 0; */
+  height: 50px;
+}
+.tabla-principal thead tr:first-child{
+  /* color: red; */
+  position: relative;
+}
+.tabla-principal thead tr:first-child::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  height: 50px;
+  background: #050C1B linear-gradient(90deg, #228fa0 -16%, #023693 70%, #14264c70 119%);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  z-index: -1;
+}
+
+.tabla-principal tbody tr:nth-child(even) {
+  background-color: #0237931e;
+  background-color: #dde6ed85;
+}
+
+.tabla-principal td {
+  padding: 0.5rem;
+  /* border-right: 0.7px solid rgb(89, 89, 165); */
+  border-right: 0.7px solid #228fa0;
+}
+.tabla-principal td:last-child{
+  /* background-color: #023693; */
+  border-right: none;
+}
+
+.botones-paginacion {
+  /* outline: 1px solid; */
+  position: absolute;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  justify-items: center;
+  bottom: 1rem;
+  width: 96.7%;  
+  user-select: none;
+  backdrop-filter: blur(0.15rem);
+}
+
+.botones-paginacion section {
+  display: flex;
+  justify-content: space-around;  
+}
+
+.botones-paginacion section:nth-child(2){  
+  gap: 1rem;
+  width: 20%;
+  align-items: center;
+}
+
+.botones-paginacion button {
+  background: transparent;
+  border: none;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 25%;
+}
+
+.botones-paginacion section:nth-child(2) button{
+  /* border: 1px solid red; */
+  height: 1.7rem;
+  padding: 5px;
+  border-radius: 50%;
+  width: 1.7rem;
+}
+
+.botones-paginacion section:nth-child(2) button:hover{
+  background: #cccccc45;
+}
+
+

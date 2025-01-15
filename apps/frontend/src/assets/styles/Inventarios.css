@@ -1,0 +1,176 @@
+.inv-prod{
+    /* border: 3px solid black; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* box-sizing: content-box; */
+}
+
+.up{
+    /* border: 2px solid blue; */
+    padding-bottom: 25px;
+    width: 100%;
+    height: auto;
+    gap: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    & table{
+        text-align: center;
+        border: 1px solid black;
+
+        & th{
+            background-color: #ddd;
+            text-align: center;
+        }
+
+        & td{
+            border-right:0.7px solid black;
+        }
+
+        & th, td{
+            padding: 8px;
+            height: auto;
+
+        }
+
+        & tr:nth-last-child(even) td{
+            background-color: #DDE6ED;
+        }
+    }
+}
+
+.half{
+    /* border: 2px solid red; */
+    padding: 0 25px 0 25px;
+    width: 100%;
+    height: auto;
+    gap: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    
+    & table{
+        text-align: center;
+        border: 1px solid black;
+
+        & th{
+            background-color: #ddd;
+            text-align: center;
+            /* height: 10px; */
+        }
+
+        & td{
+            border-right:0.7px solid black;
+            height: auto;
+        }
+
+        &  th, td{
+            padding: 8px;
+        }
+
+        & tr:nth-last-child(even) td{
+            background-color: #DDE6ED;
+        }
+    }
+}
+
+.down-tables{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    display: grid;
+    padding: 0 25px 0 25px;
+    /* grid-template-columns: 1fr 1fr; */
+    
+    & table{
+        text-align: center;
+        border: 1px solid black;
+
+        & th{
+            background-color: #ddd;
+            text-align: center;
+            /* height: 10px; */
+        }
+
+        & td{
+            border-right:0.7px solid black;
+            height: auto;
+        }
+
+        &  th, td{
+            padding: 8px;
+        }
+
+        & tr:nth-last-child(even) td{
+            background-color: #DDE6ED;
+        }
+    }
+
+}
+
+/* Inventario de insumos */
+
+.principaltable_ins{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 0 30px 0 30px;
+    overflow: auto;
+    margin-bottom: 10px;
+
+    & table{
+       
+        & td{
+            padding: 0.5rem;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        & th{
+            background-color: #ddd;
+            text-align: center;
+            padding: 10px;
+        }
+
+        & tr:nth-last-child(odd){
+            background-color: #DDE6ED;
+        }
+
+    }
+}
+
+/* Informe de inventario */
+.infInvSection{
+    width: 95%;
+    margin: auto;
+    min-height: 70vh;
+    text-align: center;
+
+    & table{
+
+        & td{
+            padding: 0.5rem;
+            text-align: center;
+            border: 1px solid black;
+            height: 35px; 
+        }
+
+        & th{
+            background-color: #ddd;
+            text-align: center;
+            padding: 10px;
+        }
+
+        &  tr:nth-last-child(even){
+            background-color: #DDE6ED;
+        }
+    }
+}
+

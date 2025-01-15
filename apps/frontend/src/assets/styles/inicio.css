@@ -1,0 +1,65 @@
+.div-init{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    border: 3px solid black;
+}
+
+.dataprofile{
+    /* border: 1px solid black; */
+    width: 90%;
+    height: 27%;
+    margin: 50px 30px 10px 60px;
+    display: flex;
+}
+
+.dataimg{
+    /* border: 3px solid red; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+
+    & img{
+        /* border: 1px solid purple; */
+        width: 70%;
+        border-radius: 50%;
+        
+        
+    }
+
+}
+
+.data{
+    width:  67%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #bfbfb6;
+    background-color: #f0f0ea;
+}
+
+
+/* Seccion de informes */
+
+.datainfo{
+    width: 90%;
+    height: 60%;
+    margin: 10px 30px 10px 60px;
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+
+    & div{
+        /* border: 1px solid black; */
+        height: 95%;
+        width: 48%;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+    }
+
+}

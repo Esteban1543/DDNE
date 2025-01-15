@@ -1,0 +1,59 @@
+.conte-cli{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 100%; */
+    overflow: auto;
+}
+
+.bordes-cli{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.user-cli{
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    height: 200px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.cli-img{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacion-cli{
+    display: flex;
+    width: 65%;
+    justify-content: left;
+    align-items: center;
+}
+
+.informacion-cli ul{
+    list-style: none;
+}
+
+.boton-cli{
+    display: flex;
+    width: 15%;
+    justify-content: left;
+    align-items: center;
+}
+
+.boton-cli button{
+    border: none;
+    background: none;
+}
+
+.boton-cli button:hover{
+    border-radius: 16px;
+    background-color: aliceblue;
+}

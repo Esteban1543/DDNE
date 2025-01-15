@@ -1,0 +1,33 @@
+
+# /* 
+#   🌐 Solicitudes HTTP
+#                         */
+
+
+# 📌 ENDPOINTS 'GET'
+
+###
+GET http://localhost:5000/?
+
+
+# 📌 ENDPOINTS 'POST'
+
+###
+POST http://localhost:5000/generarInfInv
+Content-Type: application/json
+
+{
+    "desde": "2022-11-30", 
+    "hasta": "2024-04-15",
+    "tipo_informe": "1"
+}
+
+# 📌 ENDPOINTS 'PATCH'
+
+###
+PATCH http://localhost:5000/?
+
+# 📌 ENDPOINTS 'DELETE**'
+
+###
+DELETE http://localhost:5000/?

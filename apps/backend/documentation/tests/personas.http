@@ -1,0 +1,40 @@
+
+# /* 
+#   🌐 Solicitudes HTTP
+#                         */
+
+
+# 📌 ENDPOINTS 'GET'
+
+###
+GET http://localhost:5000/proveedores
+
+
+# 📌 ENDPOINTS 'POST'
+
+###
+POST http://localhost:5000/createprovider
+Content-Type: application/json
+
+{
+      "persona_id": "123456789",
+      "fk_tipo_identificacion": 1,
+      "nombre_1": "Diego",
+      "nombre_2": "Sebastina",
+      "apellido_1": "Ladino",
+      "apellido_2": "Hernandez",
+      "telefono": "987654321",
+      "direccion": "cualquier lugar",
+      "correo": "ejemplo@gmail.com",
+      "fk_tipo_persona": "proveedor",
+}
+
+# 📌 ENDPOINTS 'PATCH'
+
+###
+PATCH http://localhost:5000/?
+
+# 📌 ENDPOINTS 'DELETE**'
+
+###
+DELETE http://localhost:5000/?

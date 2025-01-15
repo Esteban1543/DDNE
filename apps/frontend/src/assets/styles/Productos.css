@@ -1,0 +1,201 @@
+.productos-contenido{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-Producto{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 300px;
+
+    margin-bottom: 10px;
+    
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.contenido-pro{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* height: 175px; */
+}
+
+.img-productos{
+    display: flex;
+    /* width: 20%; */
+    height: 100%;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.informacion-producto{
+    display: flex;
+    /* width: 65%; */
+    height: 100%;
+    
+    justify-content: center;
+    align-items: center;
+    
+    & ul{
+        list-style: none;
+    }
+}
+
+.editar-productos{
+    display: flex;
+    width: 15%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    /* & button{
+        border: none;
+        background: none;
+
+        & :hover{
+            border-radius: 16px;
+            background-color: aliceblue;
+        }
+    } */
+}
+
+.tabla-producutos{
+    display: flex;
+    width: 100%;
+    /* max-height: 225px; */
+    margin: auto;
+    /* border-top: 3px solid black; */
+
+    justify-content: center;
+    align-items: center;
+}
+
+.diseño-tabla{
+    display: flex;
+    height: 90%;
+    scrollbar-width: none;
+    overflow: auto;
+    height: 200px;
+}
+
+.diseño-tabla table {
+    table-layout: fixed;
+    border-radius: 12px;
+    width: 800px;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Espaciado inferior para separar de otros elementos */
+    box-shadow: 0px 0px 8px rgb(54, 54, 99, .5);
+}
+
+.diseño-tabla tbody tr:hover{
+    cursor: pointer;
+    /* color: rgb(54, 54, 99); */
+    /* border-top: 0.5px solid #363663; */
+    /* border-bottom: 2px solid #363663; */
+    /* outline: 1.5px solid #363663; */
+    box-shadow: 0 2px 0 0 #113dc091;
+    text-shadow: 0px 0.6px 0 #0009;
+}
+
+.diseño-tabla thead{
+    background: #050C1B linear-gradient(90deg, #228fa0 -16%, #023693 70%, #14264c70 119%) !important;
+
+    color: white;
+    text-shadow: 1px 0 1px black;
+    font-size: 1.050rem;
+}
+
+.diseño-tabla th {
+    padding: 10px;
+}
+
+
+.diseño-tabla td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    /* height: 50px; */
+}
+
+.diseño-tabla tbody tr:nth-child(even){
+    background-color: #0237931e;
+    background-color: #dde6ed85;
+}
+
+.diseño-tabla td{
+    padding: 0.5rem;
+    /* border-right: 0.7px solid rgb(89, 89, 165); */
+    border-right: 0.7px solid #228fa0;
+}
+.diseño-tabla td:last-child{
+    border-right: none;
+}
+
+/* .bordes-pro{
+    display: flex;
+    width: 100%;
+    height: 175px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.user-pro{
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    height: 100%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.cli-pro{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacion-pro{
+    display: flex;
+    width: 65%;
+    justify-content: left;
+    align-items: center;
+}
+
+.informacion-pro ul{
+    list-style: none;
+}
+
+.boton-pro{
+    display: flex;
+    width: 15%;
+    justify-content: left;
+    align-items: center;
+}
+
+.boton-pro button{
+    border: none;
+    background: none;
+}
+
+.boton-pro button:hover{
+    border-radius: 16px;
+    background-color: aliceblue;
+} */
+
+.section_image {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    height: 293px;
+    width: 40%;
+}

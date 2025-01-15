@@ -1,0 +1,186 @@
+
+/* 
+  Estilos de Tabla General
+*/
+/* 
+.tabla-principal{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 3px solid black;
+  padding: 5vh;
+  min-height: 70vh;
+  overflow: auto;
+  margin-bottom: 1vh;
+  border-collapse: collapse;
+  text-align: center;
+}
+.tabla-principal table{
+  box-shadow: 0px 0px 8px rgb(54, 54, 99);
+}
+.tabla-principal td{
+  padding: 0.5rem;
+  border-right:0.7px solid rgb(89, 89, 165);
+}
+.tabla-principal th{
+  background-color: rgb(89, 89, 165);
+  color: white;
+  text-shadow: 1px 0 1px black;
+  font-size: 1.050rem;
+  padding: 10px;
+}
+.tabla-principal tr:nth-last-child(odd){
+  background-color: #DDE6ED;
+}
+.tabla-principal tr:hover td{
+  color: rgb(54, 54, 99);
+  border-top: 0.5px solid #363663;
+  border-bottom: 2px solid #363663;
+} */
+
+
+/*/////////////////////////////////////
+          Segundo Estilo
+/////////////////////////////////////*/
+
+/* Estilos de Tabla */
+
+.tabla-principal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 3px solid black;
+  padding: 5vh;
+  overflow: auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tabla-principal table,
+.contenedor-tablas table,
+.section-seguimiento-lote table {
+  box-shadow: 0px 0px 8px rgb(54, 54, 99, .5);
+  /* border-radius: 10px; */
+}
+
+.tabla-principal td,
+.contenedor-tablas td,
+.section-seguimiento-lote table td {
+  padding: 0.5rem;
+  /* border-right: 0.7px solid rgb(89, 89, 165); */
+  border-right: 0.7px solid #228fa0;
+}
+
+.tabla-principal thead,
+.contenedor-tablas thead,
+.section-seguimiento-lote table thead {   
+  background: #050C1B linear-gradient(90deg, #228fa0 -16%, #023693 70%, #14264c70 119%);
+  color: white;
+  text-shadow: 1px 0 1px black;
+  font-size: 1.050rem;
+}
+
+.tabla-principal th,
+.contenedor-tablas th,
+.section-seguimiento-lote table th {
+  padding: 10px;
+}
+
+
+.tabla-principal tbody tr:nth-last-child(odd),
+.contenedor-tablas tbody tr:nth-last-child(odd),
+.section-seguimiento-lote tbody tr:nth-last-child(odd) {
+  background-color: #dde6ed85;
+}
+
+.tabla-principal tr:hover,
+.contenedor-tablas tr:hover,
+.section-seguimiento-lote tr:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #363663;
+  outline: 1px solid #363663;
+}
+
+
+
+/* // Estilos para Inv-Insumos // */
+.section-inv-insumos {
+  min-height: 70vh;
+  margin-bottom: 1vh;
+}
+
+
+
+/* // Estilos para Inv-Producción // */
+.contenedor-tablas {
+  display: grid;
+  grid-template-rows: 39vh 33vh;
+  gap: 5px;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  border-top: 2px solid black;
+  border-bottom: 3px solid black;
+}
+
+.selected {
+  /* background-color: #c2e7ff; */
+  border-bottom: 2px solid currentColor;
+  color: rgb(45, 45, 94);
+  font-weight: 520;  
+}
+
+
+/* // Estilos para Seguimiento de Lote // */
+.section-seguimiento-lote {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  gap: 5px;
+}
+
+.seguimiento-lote-colum-1,
+.seguimiento-lote-colum-2 {
+  /* outline: 1px solid red; */
+  max-height: 74.5vh;
+  text-align: center;  
+}
+
+.seguimiento-lote-colum-1{
+  padding: 10px;
+  padding-right: 15px;
+  overflow-y: scroll;
+}
+
+.colum-2-table1,
+.colum-2-table2{
+  padding: 10px;
+  overflow: scroll;
+  padding-right: 15px;
+}
+
+.colum-2-table1{
+  min-height: 36vh;
+  max-height: 36vh;
+}
+
+.colum-2-table2 {
+  max-height: 35.4vh;
+}
+.colum-2-table2 table{
+  padding-top: 20px;
+}
+
+.seguimiento-lote-colum-1 table,
+.seguimiento-lote-colum-2 table {
+  width: 100%;
+  margin: auto;
+}
+
+.seguimiento-lote-colum-1,
+.seguimiento-lote-colum-2 article {
+  position: relative;
+  padding-top: 0;
+  /* margin-top: 10px; */
+}

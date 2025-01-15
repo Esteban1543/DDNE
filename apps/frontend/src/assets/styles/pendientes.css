@@ -1,0 +1,24 @@
+.tabla-pendiente{
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+}
+.tabla-pendiente, 
+.tabla-pendiente tr{
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.tabla-pendiente th{
+  padding: 7px;
+  background-color: #24292e;
+  color: aliceblue;
+}
+.tabla-pendiente td{
+  padding: 5px;
+  min-width: 12vw;
+  border-right: 0.5px solid #ccc;
+}
+
+.tabla-pendiente tbody tr td:first-child{
+  width: 30vw;
+}

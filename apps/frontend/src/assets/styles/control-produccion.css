@@ -1,0 +1,53 @@
+.contenedor-produccion{  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8%;
+  align-items: center;
+  min-height: 86.5vh;
+  width: 90%;
+  margin: auto;
+
+  padding-bottom: 20px;
+  border-bottom: 3px solid black;
+  user-select: none;
+}
+.produccion_card{
+  height: 40vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 10px;
+  border: 3px solid #023793c5;
+  cursor: pointer;
+}
+.produccion_card:hover{
+  box-shadow: 0 0 3px rgba(100, 148, 237, 0.759);
+  background: #98c8f214;
+  border-width: 2px;
+}
+.boton-atras_produccion {
+  height: 40px;
+  position: absolute;
+  top: 54%;
+  right: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 7px;
+}
+.boton-atras_produccion:hover{
+  background: #98c8f22e;
+  background: #cccccc4d;
+}
+.select-change{
+  padding: 8px 1rem;
+  text-align: left;
+  width: 12rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: absolute;
+  top: 6.4rem;
+  right: 20rem;
+}

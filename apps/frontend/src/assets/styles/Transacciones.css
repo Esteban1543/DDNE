@@ -1,0 +1,52 @@
+.cont-tran{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+.itembar-transacciones{
+    width: 100%;
+}
+
+
+.contenido-transacciones{
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    /* align-items: center; */
+
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    /* margin-bottom: 50px; */
+}
+
+
+.tabla-tran{
+    width: 90%;
+    height: 100% !;
+    margin-bottom: 10px;
+}
+/* 
+    📌Convertir a clase para que no afecte todas las tablas 
+*/
+
+/* table {
+    margin-top: 30px;
+    width: 100%;
+}
+
+table th{
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+
+th{
+    height: 50px;
+} */

@@ -1,0 +1,113 @@
+/*/////////////////////////////////////*/
+/* Segundo Diseño de Seguimiento Lote */
+/*/////////////////////////////////////*/
+
+.selected {
+  /* background-color: #c2e7ff; */
+  border-bottom: 2px solid currentColor;
+  border-top: 1px solid #ccc;
+  color: #000;  
+  text-shadow: 0px 0.6px 0 #0009;
+}
+
+.theads-sticky {
+  position: sticky;
+  top: -10px;
+  top: 0;
+  z-index: 1;
+  background: whitesmoke;
+  overflow: hidden;
+}
+
+.section-seguimiento-lote {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  gap: 5px;
+  width: 97%;
+  margin: auto;
+}
+
+.seguimiento-lote-colum-1,
+.seguimiento-lote-colum-2 {
+  /* outline: 1px solid red; */
+  max-height: 74.5vh;
+  text-align: center;  
+  scrollbar-width: none;
+}
+
+.seguimiento-lote-colum-1{
+  padding: 10px;
+  padding-right: 15px;
+  overflow-y: scroll;
+}
+/* .seguimiento-lote-colum-2 {
+  display: grid;
+  grid-template-rows: 36vh 35vh;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+} */
+
+.colum-2-table1,
+.colum-2-table2{
+  padding: 10px;
+  overflow: scroll;
+  /* padding-right: 15px; */
+  scrollbar-width: none;
+}
+
+.colum-2-table1{
+  min-height: 36vh;
+  max-height: 36vh;
+  transition: opacity 0.15s ease;
+}
+
+.colum-2-table2 {
+  /* border-top: 1px solid rgba(105, 90, 205, 0.267); */
+  max-height: 34.4vh;
+  min-height: 34.4vh;
+  transition: opacity 0.15s ease;
+}
+.colum-2-table2 table{
+  padding-top: 20px;
+}
+
+.seguimiento-lote-colum-1 table,
+.seguimiento-lote-colum-2 table {
+  width: 100%;
+  margin: auto;
+}
+.seguimiento-lote-colum-1 .tabla-principal tbody tr:hover,
+.seguimiento-lote-colum-2 .tabla-principal tbody tr:hover{
+  cursor: pointer;
+  box-shadow: 0 2px 0 0 #1240c9e3;
+  text-shadow: 0px 0.6px 0 #0009;
+}
+
+.seguimiento-lote-colum-1,
+.seguimiento-lote-colum-2 article {
+  /* outline: 2px solid blue; */
+  position: relative;
+  padding-top: 0;
+  /* margin-top: 10px; */
+}
+
+.white-space{
+  background: #98c8f217;
+  border-radius: 20px;
+  /* height: 34.4vh; */
+  /* margin: 0;
+  padding: 0; */
+  display: grid;
+  align-content: center;
+  /* color: #aeacac; */
+  color: black;
+  font-size: 1.5rem;
+  user-select: none;
+  /* outline: 0.3px solid #ccc; */
+  outline: 0.3px solid gray;
+  opacity: 0.3;
+}
+.filled{
+  opacity: 1;
+}

@@ -1,0 +1,81 @@
+
+.swagger-ui {
+  background: white;
+}
+
+.swagger-ui .topbar a {
+  display: none
+}
+
+.swagger-ui .topbar {
+  background: linear-gradient(-40deg, rgb(54, 54, 99), rgb(89, 89, 165));
+  height: 3.5rem;
+}
+
+.swagger-ui .info .title small.version-stamp {
+  background: transparent;
+  outline: 1px solid #ccc;
+}
+
+.swagger-ui .info .title .version-stamp .version {
+  color: #5959a5;
+}
+
+.swagger-ui .info .title small .version {
+  color: white;
+}
+
+.swagger-ui .renderedMarkdown p {
+  font-size: 1rem;
+}
+
+.swagger-ui .scheme-container {
+  padding-bottom: 40px;
+  padding-top: 0px;
+}
+
+.swagger-ui .servers>label select {
+  border: none;
+  border-bottom: 2px solid cornflowerblue;
+  padding: 8px 2rem 8px 8px;
+  background-color: transparent;
+  color: #5b3bcc;
+  text-align: left;
+  cursor: pointer;
+}
+
+.swagger-ui section.models .model-container {
+  border: none;
+  border-bottom: 2px solid cornflowerblue;
+  background: transparent;
+}
+
+.swagger-ui section.models h4 {
+  background: linear-gradient(-2deg, rgb(54, 54, 99), rgb(89, 89, 165));
+  color: aliceblue;
+}
+
+.swagger-ui section.models h4:hover {
+  background: linear-gradient(-2deg, rgb(54, 54, 99), rgb(89, 89, 165));
+  opacity: .9;
+}
+
+.swagger-ui section.models .model-container:hover {
+  background: aliceblue;
+}
+
+.swagger-ui .model {
+  margin-top: 1rem;
+}
+
+.swagger-ui .info>div {
+  width: 75%;
+  text-align: justify;
+}
+.opblock-tag-section {
+  /* display: none !important; */
+  background-color: rgba(90, 59, 204, 0.055);
+}
+.swagger-ui .opblock-tag a.nostyle {
+  width: 15%;
+}

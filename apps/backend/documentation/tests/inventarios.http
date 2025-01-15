@@ -1,0 +1,135 @@
+
+# /* 
+#   🌐 Solicitudes HTTP
+#                         */
+
+
+# 📌 ENDPOINTS 'GET'
+
+### Gráficos Inicio ###
+GET http://localhost:5000/data-charts
+
+### Inv insumos
+GET http://localhost:5000/inv/insumos
+
+###Inv rollos medianos
+GET http://localhost:5000/inv/medianos
+
+### Inv rollos jumbo
+GET http://localhost:5000/inv/jumbos
+
+### Inv rollos jumbo/:id
+GET http://localhost:5000/inv/jumbos/1
+
+### Inv Produccion
+GET http://localhost:5000/inv/produccion
+
+### Inv Produccion con ids
+GET http://localhost:5000/inv/produccion/2/1
+
+
+# 📌 ENDPOINTS 'POST'
+
+### Insert en Inv Insumos
+POST http://localhost:5000/inv/insumos
+Content-Type: application/json
+
+{
+  "consecutivo": "N/A",
+  "tipo_insumo": "Para fina",
+  "peso": 25,
+  "estado": "En Espera",
+  "unidades": 2,
+  "fecha_planificada": "2024-01-12",
+  "proveedor": "1032458967.CC",
+  "idUser": 1,
+  "estado_registro": "1"
+}
+
+### Insert en Inv Insumos
+POST http://localhost:5000/inv/insumos
+Content-Type: application/json
+
+# {
+#   "consecutivo": "N/A",
+#   "tipo_insumo": "Para fina",
+#   "peso": 25,
+#   "estado": "En Espera",
+#   "unidades": 2,
+#   "fecha_planificada": "2024-01-12",
+#   "proveedor": "1032458967.CC",
+#   "idUser": 1,
+#   "estado_registro": "1"
+# }
+
+# 📌 ENDPOINTS 'PATCH'
+
+### Update en Inv Insumos :id
+PATCH http://localhost:5000/inv/insumos/?
+Content-Type: application/json
+
+{
+  "estado": "Cancelado",
+  "fecha_recepcion": null
+}
+
+
+### Update en Rollos Medianos :id
+PATCH http://localhost:5000/inv/medianos/?
+Content-Type: application/json
+
+{
+  "color1": "Verde",
+  "color2": "Rojo",
+  "peso_inicial": "113"
+}
+
+### Update en Rollos Jumbos :id mediano/:id jumbo
+PATCH http://localhost:5000/inv/jumbos/?/?
+Content-Type: application/json
+
+{
+  "peso_jumbo": "17.30"
+}
+
+### Update en Inv Producción : id inv producción
+PATCH http://localhost:5000/inv/produccion/?
+Content-Type: application/json
+
+{
+  "producto_final": "",
+  "peso_producto": ""
+}
+
+
+# 📌 ENDPOINTS 'DELETE**'
+
+### Update en Inv Insumos :id
+DELETE http://localhost:5000/inv/insumos/?
+Content-Type: application/json
+
+{
+  "estado_registro": false
+}
+
+
+### Update en Rollos Medianos :id
+DELETE http://localhost:5000/inv/medianos/?
+
+
+### Update en Rollos Jumbo :id/:id
+DELETE http://localhost:5000/inv/jumbos/?/?
+
+
+### Update en Inv - Producción :id
+DELETE http://localhost:5000/inv/produccion/?
+
+
+### Login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "usuario" : "admin", 
+  "password" : "contra123"
+}
