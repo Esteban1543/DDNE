@@ -14,7 +14,7 @@ import '../assets/styles/Login.css';
 
 function Login() {
   const [formData, setFormData] = useState({
-    usuario: '',
+    usuario: 'Admin',
     password: 'contra123'
   });
 
